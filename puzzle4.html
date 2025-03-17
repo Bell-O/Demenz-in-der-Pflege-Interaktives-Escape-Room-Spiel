@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rätsel 4 - Demenz in der Pflege: Escape-Room-Spiel</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="card-header">
+                <h1 class="card-title">Rätsel 4: Der finale Pflegeplan</h1>
+            </div>
+            <div class="card-content">
+                <div class="tabs">
+                    <div class="tabs-list">
+                        <button class="tab-trigger active" data-tab="situation">Situation</button>
+                        <button class="tab-trigger" data-tab="puzzle">Pflegeplan</button>
+                        <button class="tab-trigger" data-tab="info">Versorgungsplanung</button>
+                    </div>
+                    
+                    <div class="tab-content active" id="situation">
+                        <div class="image-container">
+                            <img src="img/p4.webp" alt="Dienstzimmer im Pflegeheim" class="full-width-image">
+                        </div>
+                        
+                        <div class="prose">
+                            <p>
+                                Herr Mayer schläft schließlich in seinem Sessel ein – er ist für den Moment sicher und versorgt. 
+                                Die akute Krise ist bewältigt.
+                            </p>
+                            <p>
+                                Jetzt richtet sich Ihre Aufmerksamkeit auf den <strong>Abschluss des Falls</strong>: 
+                                Wie kann man künftig verhindern, dass so etwas wieder passiert? 
+                                Welche <strong>Maßnahmen der Versorgung</strong> müssen eingeleitet werden?
+                            </p>
+                            <p>
+                                In der Pflegepraxis würde dies heißen, einen <strong>Maßnahmenplan</strong> oder eine
+                                <strong> Versorgungsplanung</strong> aufzustellen.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="tab-content" id="puzzle">
+                        <div class="prose">
+                            <p>
+                                Sie finden am Dienstzimmer einen vorbereiteten Vordruck für einen <strong>Maßnahmenplan</strong> (Pflegeplan). 
+                                Ihre Aufgabe ist es, die <strong>wichtigen Pflegemaßnahmen</strong> für Herrn Mayer einzutragen, 
+                                basierend auf allem, was Sie im Spiel erfahren haben.
+                            </p>
+                            
+                            <p>
+                                <strong>Ihre Aufgabe:</strong> Wählen Sie die richtigen Maßnahmen aus, die in den Pflegeplan 
+                                aufgenommen werden sollten.
+                            </p>
+                        </div>
+                        
+                        <div class="care-plan">
+                            <h3>Maßnahmenplan für Herrn Mayer</h3>
+                            
+                            <div class="checkbox-group">
+                                <div class="checkbox-option">
+                                    <input type="checkbox" id="orientation" value="orientation">
+                                    <label for="orientation">
+                                        <span class="checkbox-title">Orientierung und Sicherheit</span>
+                                        <span class="checkbox-description">
+                                            Weglaufgefährdung minimieren durch Einsatz eines Alarmbands, häufigere Kontrollgänge, 
+                                            Orientierungsboard mit Datum und Tagesablauf im Zimmer.
+                                        </span>
+                                    </label>
+                                </div>
+                                
+                                <div class="checkbox-option">
+                                    <input type="checkbox" id="validation" value="validation">
+                                    <label for="validation">
+                                        <span class="checkbox-title">Kommunikation & Betreuung</span>
+                                        <span class="checkbox-description">
+                                            Validation und Biografiearbeit: Alle Pflegepersonen wenden die Validationsmethode an, 
+                                            sprechen langsam, deutlich, mit kurzer, einfacher Sprache und gehen auf Herrn Mayers 
+                                            Realitätswelt ein.
+                                        </span>
+                                    </label>
+                                </div>
+                                
+                                <div class="checkbox-option">
+                                    <input type="checkbox" id="fixation" value="fixation">
+                                    <label for="fixation">
+                                        <span class="checkbox-title">Fixierung im Bett</span>
+                                        <span class="checkbox-description">
+                                            Fixierung im Bett jede Nacht, um Weglaufen zu verhindern und die Sicherheit zu gewährleisten.
+                                        </span>
+                                    </label>
+                                </div>
+                                
+                                <div class="checkbox-option">
+                                    <input type="checkbox" id="nutrition" value="nutrition">
+                                    <label for="nutrition">
+                                        <span class="checkbox-title">Ernährungsförderung</span>
+                                        <span class="checkbox-description">
+                                            Ernährungsmanagement: Lieblingsspeisen anbieten (Grießbrei am Abend), Prothesengebrauch vor den 
+                                            Mahlzeiten prüfen, Trinkplan erstellen (mind. 1,5 Liter am Tag), wöchentliches Wiegen.
+                                        </span>
+                                    </label>
+                                </div>
+                                
+                                <div class="checkbox-option">
+                                    <input type="checkbox" id="cat" value="cat">
+                                    <label for="cat">
+                                        <span class="checkbox-title">Kater ins Heim holen</span>
+                                        <span class="checkbox-description">
+                                            Findus wirklich ins Heim holen, um Herrn Mayer zu beruhigen und ihm Gesellschaft zu leisten.
+                                        </span>
+                                    </label>
+                                </div>
+                                
+                                <div class="checkbox-option">
+                                    <input type="checkbox" id="planning" value="planning">
+                                    <label for="planning">
+                                        <span class="checkbox-title">Versorgungsplanung</span>
+                                        <span class="checkbox-description">
+                                            Pflegeüberleitung und Angehörigenarbeit: Herrn Mayers Tochter informieren, Anpassung des Pflegegrades 
+                                            prüfen, Treffen mit Hausarzt vereinbaren, gemeinsamen Versorgungsplan erstellen.
+                                        </span>
+                                    </label>
+                                </div>
+                                
+                                <div class="checkbox-option">
+                                    <input type="checkbox" id="fluids" value="fluids">
+                                    <label for="fluids">
+                                        <span class="checkbox-title">Flüssigkeitsrestriktion</span>
+                                        <span class="checkbox-description">
+                                            Keine Flüssigkeit nach 18 Uhr geben, um nächtliche Unruhe durch Toilettengänge zu vermeiden.
+                                        </span>
+                                    </label>
+                                </div>
+                            </div>
+                            
+                            <div class="center">
+                                <button id="submit-plan" class="button">Pflegeplan einreichen</button>
+                            </div>
+                        </div>
+                        
+                        <div id="result-container" class="hidden">
+                            <div id="correct-answer" class="alert alert-success hidden">
+                                <h4>Perfekt!</h4>
+                                <p>
+                                    Sie haben die richtigen Maßnahmen für Herrn Mayers Pflegeplan ausgewählt. 
+                                    Diese umfassende Versorgungsplanung wird dazu beitragen, seine Betreuung zu verbessern 
+                                    und zukünftige Risiken zu minimieren.
+                                </p>
+                            </div>
+                            
+                            <div id="wrong-answer" class="alert alert-error hidden">
+                                <h4>Überprüfen Sie Ihre Auswahl</h4>
+                                <p>
+                                    Einige der ausgewählten Maßnahmen sind nicht optimal für Herrn Mayers Situation. 
+                                    Denken Sie an die Prinzipien der personenzentrierten Pflege und an die Erkenntnisse 
+                                    aus den vorherigen Rätseln.
+                                </p>
+                            </div>
+                            
+                            <div id="success-content" class="prose hidden">
+                                <p>
+                                    Herzlichen Glückwunsch! Sie haben alle Rätsel gelöst und einen umfassenden Pflegeplan 
+                                    für Herrn Mayer erstellt.
+                                </p>
+                                <p>
+                                    Durch Ihr Wissen und Ihre Teamarbeit haben Sie die Situation gemeistert. 
+                                    Herr Mayer ruht nun friedlich, und sein zukünftiges Wohlbefinden ist durch Ihre 
+                                    sorgfältige Planung gesichert.
+                                </p>
+                                <p>
+                                    Sie haben in diesem Escape-Room-Spiel wichtige Aspekte der Demenzpflege kennengelernt und angewendet:
+                                </p>
+                                <ul>
+                                    <li>Erkennen und Verstehen von Demenzsymptomen</li>
+                                    <li>Einfühlsame Kommunikation mit Menschen mit Demenz</li>
+                                    <li>Individuelle Ernährungsförderung</li>
+                                    <li>Umfassende Versorgungsplanung</li>
+                                </ul>
+                                
+                                <div class="center">
+                                    <a href="complete.html" class="button">Abschließen</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="tab-content" id="info">
+                        <div class="prose">
+                            <h3>Versorgungsplanung bei Demenz</h3>
+                            
+                            <h4>Wichtige Elemente:</h4>
+                            <ul>
+                                <li>
+                                    <strong>Interdisziplinäre Zusammenarbeit:</strong> Pflege, Ärzte, Therapeuten, Sozialdienst, Angehörige
+                                </li>
+                                <li>
+                                    <strong>Biografieorientierung:</strong> Einbeziehung der Lebensgeschichte und Vorlieben
+                                </li>
+                                <li>
+                                    <strong>Präventive Maßnahmen:</strong> Vorbeugung von Komplikationen wie Weglaufen, Dehydrierung, Mangelernährung
+                                </li>
+                                <li>
+                                    <strong>Regelmäßige Evaluation:</strong> Anpassung des Plans an veränderte Bedürfnisse
+                                </li>
+                                <li>
+                                    <strong>Ethische Grundsätze:</strong> Autonomie respektieren, Würde wahren, freiheitsentziehende Maßnahmen vermeiden
+                                </li>
+                            </ul>
+                            
+                            <h4>Pflegeplanung nach dem Pflegeprozess:</h4>
+                            <ol>
+                                <li>
+                                    <strong>Assessment:</strong> Informationssammlung (z.B. MMST, Biografiearbeit)
+                                </li>
+                                <li>
+                                    <strong>Pflegediagnose:</strong> Probleme identifizieren (z.B. Sturzgefahr, Ernährungsdefizit)
+                                </li>
+                                <li>
+                                    <strong>Planung:</strong> Ziele und Maßnahmen festlegen
+                                </li>
+                                <li>
+                                    <strong>Durchführung:</strong> Umsetzung der geplanten Maßnahmen
+                                </li>
+                                <li>
+                                    <strong>Evaluation:</strong> Überprüfung der Wirksamkeit und ggf. Anpassung
+                                </li>
+                            </ol>
+                            
+                            <div class="info-box">
+                                <h4>Praxistipp:</h4>
+                                <p>
+                                    Eine gute Versorgungsplanung bei Demenz berücksichtigt sowohl die körperlichen als auch die 
+                                    psychosozialen Bedürfnisse des Betroffenen. Sie sollte flexibel sein und regelmäßig an den 
+                                    fortschreitenden Verlauf der Erkrankung angepasst werden.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card-footer">
+                <div class="navigation-buttons">
+                    <a href="puzzle3.html" class="button button-outline">Zurück</a>
+                    <div id="next-button-container"></div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer">
+            <p>© <span id="current-year"></span> Demenz in der Pflege: Escape-Room-Spiel | Entwickelt für Bildungszwecke</p>
+            <p>Konzept erstellt von <a href="https://bell-o.github.io/website/" target="_blank" rel="noopener noreferrer">Bell-O</a></p>
+        </div>
+    </div>
+    
+    <div class="credit-badge">
+        <a href="https://bell-o.github.io/website/" target="_blank" rel="noopener noreferrer">
+            <span>Konzept von</span>
+            <span class="bold">Bell-O</span>
+        </a>
+    </div>
+
+    <script>
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+        
+        // Tab functionality
+        const tabTriggers = document.querySelectorAll('.tab-trigger');
+        const tabContents = document.querySelectorAll('.tab-content');
+        
+        tabTriggers.forEach(trigger => {
+            trigger.addEventListener('click', () => {
+                // Remove active class from all triggers and contents
+                tabTriggers.forEach(t => t.classList.remove('active'));
+                tabContents.forEach(c => c.classList.remove('active'));
+                
+                // Add active class to clicked trigger
+                trigger.classList.add('active');
+                
+                // Show corresponding content
+                const tabId = trigger.getAttribute('data-tab');
+                document.getElementById(tabId).classList.add('active');
+            });
+        });
+        
+        // Check answer functionality
+        const submitPlanButton = document.getElementById('submit-plan');
+        const resultContainer = document.getElementById('result-container');
+        const correctAnswer = document.getElementById('correct-answer');
+        const wrongAnswer = document.getElementById('wrong-answer');
+        const successContent = document.getElementById('success-content');
+        const nextButtonContainer = document.getElementById('next-button-container');
+        
+        submitPlanButton.addEventListener('click', () => {
+            const selectedMeasures = Array.from(document.querySelectorAll('input[type="checkbox"]:checked')).map(cb => cb.value);
+            const correctMeasures = ['orientation', 'validation', 'nutrition', 'planning'];
+            
+            // Check if selected measures match correct measures exactly
+            const isCorrect = 
+                correctMeasures.every(measure => selectedMeasures.includes(measure)) && 
+                selectedMeasures.length === correctMeasures.length;
+            
+            resultContainer.classList.remove('hidden');
+            
+            if (isCorrect) {
+                // Correct answer
+                correctAnswer.classList.remove('hidden');
+                wrongAnswer.classList.add('hidden');
+                successContent.classList.remove('hidden');
+                submitPlanButton.disabled = true;
+                
+                // Add next button to footer
+                nextButtonContainer.innerHTML = '<a href="complete.html" class="button">Abschließen</a>';
+            } else {
+                // Wrong answer
+                correctAnswer.classList.add('hidden');
+                wrongAnswer.classList.remove('hidden');
+                successContent.classList.add('hidden');
+            }
+        });
+    </script>
+</body>
+</html>

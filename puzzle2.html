@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rätsel 2 - Demenz in der Pflege: Escape-Room-Spiel</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="card-header">
+                <h1 class="card-title">Rätsel 2: Die Suche nach Herrn Mayer</h1>
+            </div>
+            <div class="card-content">
+                <div class="tabs">
+                    <div class="tabs-list">
+                        <button class="tab-trigger active" data-tab="situation">Situation</button>
+                        <button class="tab-trigger" data-tab="clues">Hinweise</button>
+                        <button class="tab-trigger" data-tab="puzzle">Begegnung</button>
+                        <button class="tab-trigger" data-tab="info">Demenz-Info</button>
+                    </div>
+                    
+                    <div class="tab-content active" id="situation">
+                        <div class="image-container">
+                            <img src="/img/p2.webp" alt="Straße vor dem Pflegeheim" class="full-width-image">
+                        </div>
+                        
+                        <div class="prose">
+                            <p>
+                                Sie haben das Gebäude verlassen und begeben sich in die nähere Umgebung auf die Suche nach Herrn Mayer. 
+                                Sie müssen Hinweise in der Umgebung sammeln und einschätzen, wie Herr Mayer aufgrund seiner Demenz handeln würde.
+                            </p>
+                            <p>
+                                Ihre Aufgabe ist es, Herrn Mayer zu finden und ihn sicher zurück ins Pflegeheim zu bringen. 
+                                Dazu müssen Sie die richtigen Entscheidungen treffen und angemessen kommunizieren.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="tab-content" id="clues">
+                        <div class="clue-grid">
+                            <div class="clue-card">
+                                <div class="clue-card-header">
+                                    <h3 class="clue-card-title">Zeugenaussage</h3>
+                                </div>
+                                <div class="clue-card-content">
+                                    <p>
+                                        Draußen treffen Sie eine Nachbarin, die berichtet:
+                                        <em class="quote">
+                                            "Ich habe einen älteren Herrn gesehen, der in Hausschuhen Richtung Park gegangen ist. 
+                                            Er wirkte verwirrt und fragte nach seinem Kater."
+                                        </em>
+                                    </p>
+                                    <p>
+                                        Diese Information bestätigt Ihren Verdacht: Herr Mayer hat das Heim verlassen und 
+                                        sucht vielleicht seinen Kater.
+                                    </p>
+                                </div>
+                            </div>
+                            
+                            <div class="clue-card">
+                                <div class="clue-card-header">
+                                    <h3 class="clue-card-title">Supermarkt-Hinweis</h3>
+                                </div>
+                                <div class="clue-card-content">
+                                    <p>
+                                        Vor dem kleinen Supermarkt um die Ecke finden Sie eine leere Einkaufstüte mit dem 
+                                        Heimlogo und darin eine Dose Katzenfutter.
+                                    </p>
+                                    <p>
+                                        Der Ladeninhaber berichtet:
+                                        <em class="quote">
+                                            "Der Herr wirkte sehr durcheinander. Er wollte mit einem alten, abgelaufenen Gutschein 
+                                            bezahlen und sprach die ganze Zeit von seinem Kater Findus. Ich habe ihm helfen wollen, 
+                                            aber er ist dann plötzlich Richtung Park weitergegangen."
+                                        </em>
+                                    </p>
+                                </div>
+                            </div>
+                            
+                            <div class="clue-card" style="grid-column: span 2;">
+                                <div class="clue-card-header">
+                                    <h3 class="clue-card-title">Spur im Park</h3>
+                                </div>
+                                <div class="clue-card-content">
+                                    <p>
+                                        Sie gehen zum nahegelegenen Park. Dort entdecken Sie Herr Mayer schließlich auf einer Bank sitzen. 
+                                        Er hat seine Jacke dabei, wirkt erschöpft und hält etwas im Arm – es ist eine zusammengerollte Jacke, 
+                                        die er offenbar für seinen Kater hält. Er redet leise zu diesem "Kater".
+                                    </p>
+                                    <p>
+                                        Herr Mayer erkennt Sie nicht sofort, er wirkt ängstlich und <strong>misstrauisch</strong> als Sie sich nähern. 
+                                        Dies ist ein kritischer Moment: Er zeigt <strong>herausforderndes Verhalten</strong>, was in fortgeschrittenen 
+                                        Stadien der Demenz häufig vorkommt.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="tab-content" id="puzzle">
+                        <div class="prose">
+                            <p>
+                                Sie haben Herrn Mayer im Park gefunden. Er sitzt auf einer Bank, hält eine zusammengerollte Jacke im Arm 
+                                und spricht mit ihr, als wäre es sein Kater Findus. Er wirkt ängstlich und misstrauisch.
+                            </p>
+                            
+                            <p>
+                                <strong>Ihre Aufgabe:</strong> Wählen Sie die beste Kommunikationsstrategie, um Herrn Mayer zu beruhigen 
+                                und ihn zur Rückkehr ins Pflegeheim zu bewegen.
+                            </p>
+                        </div>
+                        
+                        <div class="radio-group">
+                            <div class="radio-option">
+                                <input type="radio" id="option-a" name="communication" value="A">
+                                <label for="option-a">
+                                    <strong>Option A:</strong> "Herr Mayer, was machen Sie denn hier? Sie dürfen nicht weglaufen, 
+                                    kommen Sie sofort zurück!" (strenger Ton)
+                                </label>
+                            </div>
+                            
+                            <div class="radio-option">
+                                <input type="radio" id="option-b" name="communication" value="B">
+                                <label for="option-b">
+                                    <strong>Option B:</strong> "Ihr Kater wartet im Heim auf Sie, wir bringen Sie zu ihm." 
+                                    (eine kleine Notlüge, um ihn zur Rückkehr zu bewegen)
+                                </label>
+                            </div>
+                            
+                            <div class="radio-option">
+                                <input type="radio" id="option-c" name="communication" value="C">
+                                <label for="option-c">
+                                    <strong>Option C:</strong> "Warum sind Sie weggelaufen? Hier gibt es doch keinen Kater." 
+                                    (korrigierend und vorwurfsvoll)
+                                </label>
+                            </div>
+                            
+                            <div class="radio-option">
+                                <input type="radio" id="option-d" name="communication" value="D">
+                                <label for="option-d">
+                                    <strong>Option D:</strong> "Sie sind bestimmt erschöpft. Darf ich mich zu Ihnen setzen? 
+                                    Erzählen Sie mir von Findus, wo ist er denn normalerweise um diese Zeit?" (einfühlsam und validierend)
+                                </label>
+                            </div>
+                        </div>
+                        
+                        <div class="center">
+                            <button id="check-answer" class="button">Antwort prüfen</button>
+                        </div>
+                        
+                        <div id="result-container" class="hidden">
+                            <div id="correct-answer" class="alert alert-success hidden">
+                                <h4>Richtig!</h4>
+                                <p>
+                                    Die einfühlsame, validierende Kommunikation ist der beste Ansatz. Sie gewinnen Herr Mayers Vertrauen, 
+                                    indem Sie auf seine Gefühle eingehen und seine Realität akzeptieren.
+                                </p>
+                            </div>
+                            
+                            <div id="wrong-answer" class="alert alert-error hidden">
+                                <h4>Nicht optimal</h4>
+                                <p>
+                                    Diese Kommunikationsstrategie könnte Herrn Mayer verunsichern oder verärgern. 
+                                    Versuchen Sie einen einfühlsameren, validierenden Ansatz.
+                                </p>
+                            </div>
+                            
+                            <div id="success-content" class="prose hidden">
+                                <p>
+                                    Sie setzen sich neben Herrn Mayer und sprechen ruhig mit ihm. Er erzählt von Findus und entspannt sich langsam. 
+                                    Nach einer Weile sagt er: "Findus... er wartet bestimmt zuhause..."
+                                </p>
+                                <p>
+                                    Sie versichern ihm freundlich: "Bestimmt hat Findus schon etwas zu fressen bekommen. Sie sehen müde aus, 
+                                    Herr Mayer, es ist kalt hier draußen – wie wäre es, wenn wir zurück ins Warme gehen und Sie erzählen mir 
+                                    auf dem Weg noch von Findus?"
+                                </p>
+                                <p>
+                                    Herr Mayer nickt schließlich und steht langsam auf. Er ist bereit, mit Ihnen zurück ins Heim zu kommen.
+                                </p>
+                                
+                                <div class="center">
+                                    <a href="puzzle3.html" class="button">Zum nächsten Rätsel</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="tab-content" id="info">
+                        <div class="prose">
+                            <h3>Kommunikation bei Demenz</h3>
+                            
+                            <h4>Wichtige Prinzipien:</h4>
+                            <ul>
+                                <li>
+                                    <strong>Validation:</strong> Die Gefühle und die subjektive Realität des Betroffenen anerkennen
+                                </li>
+                                <li>
+                                    <strong>Widerspruch vermeiden:</strong> Nicht korrigieren oder mit der Realität konfrontieren
+                                </li>
+                                <li>
+                                    <strong>Einfache Sprache:</strong> Kurze Sätze, klare Anweisungen, langsames Sprechen
+                                </li>
+                                <li>
+                                    <strong>Nonverbale Kommunikation:</strong> Blickkontakt, freundliche Mimik, beruhigende Gestik
+                                </li>
+                                <li>
+                                    <strong>Geduld und Zeit:</strong> Dem Betroffenen Zeit zum Verstehen und Antworten geben
+                                </li>
+                            </ul>
+                            
+                            <h4>Typische Demenzsymptome:</h4>
+                            <ul>
+                                <li>
+                                    <strong>Weglauftendenz:</strong> Betroffene verlassen oft unbemerkt ihre Umgebung
+                                </li>
+                                <li>
+                                    <strong>Leben in der Vergangenheit:</strong> Vergangene Ereignisse werden als gegenwärtig erlebt
+                                </li>
+                                <li>
+                                    <strong>Misstrauen und Angst:</strong> Häufige emotionale Reaktionen auf Orientierungsverlust
+                                </li>
+                                <li>
+                                    <strong>Herausforderndes Verhalten:</strong> Kann durch Überforderung, Angst oder Unwohlsein entstehen
+                                </li>
+                            </ul>
+                            
+                            <div class="info-box">
+                                <h4>Praxistipp:</h4>
+                                <p>
+                                    Bei der Begegnung mit verwirrten Menschen mit Demenz ist es wichtig, auf Augenhöhe zu kommunizieren, 
+                                    sich langsam zu nähern und eine vertrauensvolle Atmosphäre zu schaffen. Vermeiden Sie es, die Person 
+                                    zu korrigieren oder mit der Realität zu konfrontieren.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card-footer">
+                <div class="navigation-buttons">
+                    <a href="puzzle1.html" class="button button-outline">Zurück</a>
+                    <div id="next-button-container"></div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer">
+            <p>© <span id="current-year"></span> Demenz in der Pflege: Escape-Room-Spiel | Entwickelt für Bildungszwecke</p>
+            <p>Konzept erstellt von <a href="https://bell-o.github.io/website/" target="_blank" rel="noopener noreferrer">Bell-O</a></p>
+        </div>
+    </div>
+    
+    <div class="credit-badge">
+        <a href="https://bell-o.github.io/website/" target="_blank" rel="noopener noreferrer">
+            <span>Konzept von</span>
+            <span class="bold">Bell-O</span>
+        </a>
+    </div>
+
+    <script>
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+        
+        // Tab functionality
+        const tabTriggers = document.querySelectorAll('.tab-trigger');
+        const tabContents = document.querySelectorAll('.tab-content');
+        
+        tabTriggers.forEach(trigger => {
+            trigger.addEventListener('click', () => {
+                // Remove active class from all triggers and contents
+                tabTriggers.forEach(t => t.classList.remove('active'));
+                tabContents.forEach(c => c.classList.remove('active'));
+                
+                // Add active class to clicked trigger
+                trigger.classList.add('active');
+                
+                // Show corresponding content
+                const tabId = trigger.getAttribute('data-tab');
+                document.getElementById(tabId).classList.add('active');
+            });
+        });
+        
+        // Check answer functionality
+        const checkAnswerButton = document.getElementById('check-answer');
+        const resultContainer = document.getElementById('result-container');
+        const correctAnswer = document.getElementById('correct-answer');
+        const wrongAnswer = document.getElementById('wrong-answer');
+        const successContent = document.getElementById('success-content');
+        const nextButtonContainer = document.getElementById('next-button-container');
+        
+        checkAnswerButton.addEventListener('click', () => {
+            const selectedOption = document.querySelector('input[name="communication"]:checked');
+            
+            if (!selectedOption) {
+                alert('Bitte wählen Sie eine Option aus.');
+                return;
+            }
+            
+            resultContainer.classList.remove('hidden');
+            
+            if (selectedOption.value === 'D') {
+                // Correct answer
+                correctAnswer.classList.remove('hidden');
+                wrongAnswer.classList.add('hidden');
+                successContent.classList.remove('hidden');
+                checkAnswerButton.disabled = true;
+                
+                // Add next button to footer
+                nextButtonContainer.innerHTML = '<a href="puzzle3.html" class="button">Weiter</a>';
+            } else {
+                // Wrong answer
+                correctAnswer.classList.add('hidden');
+                wrongAnswer.classList.remove('hidden');
+                successContent.classList.add('hidden');
+            }
+        });
+    </script>
+</body>
+</html>

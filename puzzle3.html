@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rätsel 3 - Demenz in der Pflege: Escape-Room-Spiel</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="card-header">
+                <h1 class="card-title">Rätsel 3: Zurück im Heim – die Beruhigung</h1>
+            </div>
+            <div class="card-content">
+                <div class="tabs">
+                    <div class="tabs-list">
+                        <button class="tab-trigger active" data-tab="situation">Situation</button>
+                        <button class="tab-trigger" data-tab="clues">Beobachtungen</button>
+                        <button class="tab-trigger" data-tab="puzzle">Ernährung</button>
+                        <button class="tab-trigger" data-tab="info">Ernährungs-Info</button>
+                    </div>
+                    
+                    <div class="tab-content active" id="situation">
+                        <div class="image-container">
+                            <img src="img/p3.webp" alt="Zimmer im Pflegeheim" class="full-width-image">
+                        </div>
+                        
+                        <div class="prose">
+                            <p>
+                                Sie haben Herr Mayer erfolgreich zurück ins Pflegeheim begleitet. Doch die Herausforderung ist noch nicht vorbei – 
+                                zurück in vertrauter Umgebung zeigt Herr Mayer gemischte Gefühle.
+                            </p>
+                            <p>
+                                Er ist körperlich erschöpft vom Umherirren, gleichzeitig immer noch unruhig wegen seiner angenommenen Aufgabe. 
+                                Er murmelt immer wieder: "Findus braucht Futter..."
+                            </p>
+                            <p>
+                                Jetzt gilt es, ihn weiter zu beruhigen und auf seine <strong>Bedürfnisse</strong> einzugehen. 
+                                Das nächste Rätsel besteht darin, geeignete <strong>Betreuungs- und Kommunikationsmaßnahmen</strong> 
+                                einzusetzen, damit Herr Mayer wieder entspannen kann.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="tab-content" id="clues">
+                        <div class="clue-grid">
+                            <div class="clue-card">
+                                <div class="clue-card-header">
+                                    <h3 class="clue-card-title">Flüssigkeitsmangel</h3>
+                                </div>
+                                <div class="clue-card-content">
+                                    <p>
+                                        Herr Mayer wirkt <strong>müde und durstig</strong>. Sie bemerken, dass er ziemlich schwitzt und 
+                                        seine Lippen trocken sind (Anzeichen von Flüssigkeitsmangel möglich, Stichwort <strong>Exsikkose</strong>).
+                                    </p>
+                                    <p>
+                                        Wahrscheinlich hat er während seines Ausflugs nichts getrunken.
+                                    </p>
+                                </div>
+                            </div>
+                            
+                            <div class="clue-card">
+                                <div class="clue-card-header">
+                                    <h3 class="clue-card-title">Information von Frau Keller</h3>
+                                </div>
+                                <div class="clue-card-content">
+                                    <p>
+                                        Auf dem Wohnbereich ist inzwischen auch <strong>Frau Keller</strong>, eine erfahrene Pflegefachkraft, anwesend.
+                                    </p>
+                                    <p>
+                                        Sie flüstert Ihnen zu:
+                                        <em class="quote">
+                                            "Er hat das Mittagessen verweigert und nur wenig getrunken. Wir müssen aufpassen, dass er nicht dehydriert."
+                                        </em>
+                                    </p>
+                                </div>
+                            </div>
+                            
+                            <div class="clue-card">
+                                <div class="clue-card-header">
+                                    <h3 class="clue-card-title">Unberührtes Essen</h3>
+                                </div>
+                                <div class="clue-card-content">
+                                    <p>
+                                        Auf dem Tisch steht noch Herr Mayers unberührtes Abendessen vom Buffet (Brot, Aufschnitt, Suppe).
+                                    </p>
+                                    <p>
+                                        Sie müssen herausfinden, <strong>warum</strong> er nicht essen wollte und wie Sie ihn jetzt zum 
+                                        Essen/Trinken motivieren können.
+                                    </p>
+                                </div>
+                            </div>
+                            
+                            <div class="clue-card">
+                                <div class="clue-card-header">
+                                    <h3 class="clue-card-title">Biografie-Hinweise</h3>
+                                </div>
+                                <div class="clue-card-content">
+                                    <p>
+                                        In Herr Mayers Biografie (die im Schrank liegt) finden Sie den Hinweis, dass er
+                                        <strong> süßes Essen bevorzugt</strong> und abends gerne Grießbrei oder Kompott isst.
+                                    </p>
+                                    <p>
+                                        Außerdem steht dort, dass er eine Zahnprothese hat. Tatsächlich sehen Sie im Bad sein
+                                        <strong> Gebiss in einem Becher</strong> liegen – er hatte es den ganzen Tag nicht eingesetzt!
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="tab-content" id="puzzle">
+                        <div class="prose">
+                            <p>
+                                Herr Mayer ist erschöpft, dehydriert und hat seit Stunden nichts gegessen. 
+                                Sie müssen nun die richtigen Maßnahmen ergreifen, um seine Ernährungssituation zu verbessern.
+                            </p>
+                            
+                            <p>
+                                <strong>Ihre Aufgabe:</strong> Wählen Sie die beste Strategie zur Ernährungsförderung für Herrn Mayer.
+                            </p>
+                        </div>
+                        
+                        <div class="radio-group">
+                            <div class="radio-option">
+                                <input type="radio" id="option-a" name="nutrition" value="A">
+                                <label for="option-a">
+                                    <strong>Option A:</strong> Ihn strikt ermahnen zu essen, weil es wichtig ist (Druck ausüben).
+                                </label>
+                            </div>
+                            
+                            <div class="radio-option">
+                                <input type="radio" id="option-b" name="nutrition" value="B">
+                                <label for="option-b">
+                                    <strong>Option B:</strong> Das Tablett einfach wieder hinstellen und abwarten (Passivität).
+                                </label>
+                            </div>
+                            
+                            <div class="radio-option">
+                                <input type="radio" id="option-c" name="nutrition" value="C">
+                                <label for="option-c">
+                                    <strong>Option C:</strong> Auf ihn eingehen: Prothese einsetzen, ein anderes bevorzugtes Essen/Getränk anbieten, 
+                                    ggf. Unterstützung beim Essen leisten.
+                                </label>
+                            </div>
+                            
+                            <div class="radio-option">
+                                <input type="radio" id="option-d" name="nutrition" value="D">
+                                <label for="option-d">
+                                    <strong>Option D:</strong> Ihn ablenken und das Essen heimlich pürieren, um es über einen Trinkbecher zu geben, 
+                                    ohne dass er es merkt (am Bedarf vorbei, bevormundend).
+                                </label>
+                            </div>
+                        </div>
+                        
+                        <div class="center">
+                            <button id="check-answer" class="button">Antwort prüfen</button>
+                        </div>
+                        
+                        <div id="result-container" class="hidden">
+                            <div id="correct-answer" class="alert alert-success hidden">
+                                <h4>Richtig!</h4>
+                                <p>
+                                    Die individuell angepasste Unterstützung ist der beste Ansatz. Sie berücksichtigen seine persönlichen 
+                                    Bedürfnisse und Vorlieben und ermöglichen ihm so eine angenehme Nahrungsaufnahme.
+                                </p>
+                            </div>
+                            
+                            <div id="wrong-answer" class="alert alert-error hidden">
+                                <h4>Nicht optimal</h4>
+                                <p>
+                                    Diese Strategie berücksichtigt nicht ausreichend die individuellen Bedürfnisse und Vorlieben von Herrn Mayer. 
+                                    Versuchen Sie einen personenzentrierteren Ansatz.
+                                </p>
+                            </div>
+                            
+                            <div id="success-content" class="prose hidden">
+                                <p>
+                                    Sie setzen Herrn Mayer behutsam sein Gebiss ein und erklären ruhig, was Sie tun: 
+                                    "Schauen Sie, hier ist Ihr Gebiss, damit können Sie besser essen, ich helfe Ihnen kurz."
+                                </p>
+                                <p>
+                                    Aus der Küche holen Sie seinen Lieblings-Grießbrei mit Apfelmus. Währenddessen bieten Sie ihm schon mal 
+                                    etwas zu trinken an: ein Glas seines bevorzugten Saftes, leicht verdünnt.
+                                </p>
+                                <p>
+                                    Herr Mayer nimmt dank Ihrer einfühlsamen Unterstützung nun etwas zu sich. Er löffelt einige Bissen vom 
+                                    Grießbrei und trinkt ein halbes Glas Saft. Man sieht förmlich, wie er sich entspannt, da Durst und 
+                                    Hunger gestillt werden.
+                                </p>
+                                
+                                <div class="center">
+                                    <a href="puzzle4.html" class="button">Zum nächsten Rätsel</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="tab-content" id="info">
+                        <div class="prose">
+                            <h3>Ernährung bei Demenz</h3>
+                            
+                            <h4>Herausforderungen:</h4>
+                            <ul>
+                                <li>
+                                    <strong>Vergesslichkeit:</strong> Vergessen zu essen oder zu trinken
+                                </li>
+                                <li>
+                                    <strong>Kau- und Schluckstörungen:</strong> Erschweren die Nahrungsaufnahme
+                                </li>
+                                <li>
+                                    <strong>Geschmacksveränderungen:</strong> Oft Vorliebe für süße Speisen
+                                </li>
+                                <li>
+                                    <strong>Unruhe:</strong> Schwierigkeit, lange genug am Tisch zu sitzen
+                                </li>
+                                <li>
+                                    <strong>Hilfsmittel:</strong> Vergessen der Zahnprothese oder anderer Hilfsmittel
+                                </li>
+                            </ul>
+                            
+                            <h4>Strategien zur Ernährungsförderung:</h4>
+                            <ul>
+                                <li>
+                                    <strong>Biografiearbeit:</strong> Lieblingsspeisen und Gewohnheiten kennen und berücksichtigen
+                                </li>
+                                <li>
+                                    <strong>Angepasste Konsistenz:</strong> Weiche, leicht zu kauende Speisen anbieten
+                                </li>
+                                <li>
+                                    <strong>Regelmäßige Flüssigkeitszufuhr:</strong> Mindestens 1,5 Liter täglich
+                                </li>
+                                <li>
+                                    <strong>Angenehme Atmosphäre:</strong> Ruhige Umgebung, keine Ablenkungen
+                                </li>
+                                <li>
+                                    <strong>Unterstützung:</strong> Bei Bedarf Hilfestellung geben, ohne zu bevormunden
+                                </li>
+                            </ul>
+                            
+                            <div class="info-box">
+                                <h4>Praxistipp:</h4>
+                                <p>
+                                    Bei Menschen mit Demenz ist es wichtig, auf Anzeichen von Durst und Hunger zu achten, 
+                                    da sie diese oft nicht mehr selbst äußern können. Bieten Sie regelmäßig kleine Portionen 
+                                    und Getränke an und achten Sie auf eine angenehme Atmosphäre beim Essen.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card-footer">
+                <div class="navigation-buttons">
+                    <a href="puzzle2.html" class="button button-outline">Zurück</a>
+                    <div id="next-button-container"></div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer">
+            <p>© <span id="current-year"></span> Demenz in der Pflege: Escape-Room-Spiel | Entwickelt für Bildungszwecke</p>
+            <p>Konzept erstellt von <a href="https://bell-o.github.io/website/" target="_blank" rel="noopener noreferrer">Bell-O</a></p>
+        </div>
+    </div>
+    
+    <div class="credit-badge">
+        <a href="https://bell-o.github.io/website/" target="_blank" rel="noopener noreferrer">
+            <span>Konzept von</span>
+            <span class="bold">Bell-O</span>
+        </a>
+    </div>
+
+    <script>
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+        
+        // Tab functionality
+        const tabTriggers = document.querySelectorAll('.tab-trigger');
+        const tabContents = document.querySelectorAll('.tab-content');
+        
+        tabTriggers.forEach(trigger => {
+            trigger.addEventListener('click', () => {
+                // Remove active class from all triggers and contents
+                tabTriggers.forEach(t => t.classList.remove('active'));
+                tabContents.forEach(c => c.classList.remove('active'));
+                
+                // Add active class to clicked trigger
+                trigger.classList.add('active');
+                
+                // Show corresponding content
+                const tabId = trigger.getAttribute('data-tab');
+                document.getElementById(tabId).classList.add('active');
+            });
+        });
+        
+        // Check answer functionality
+        const checkAnswerButton = document.getElementById('check-answer');
+        const resultContainer = document.getElementById('result-container');
+        const correctAnswer = document.getElementById('correct-answer');
+        const wrongAnswer = document.getElementById('wrong-answer');
+        const successContent = document.getElementById('success-content');
+        const nextButtonContainer = document.getElementById('next-button-container');
+        
+        checkAnswerButton.addEventListener('click', () => {
+            const selectedOption = document.querySelector('input[name="nutrition"]:checked');
+            
+            if (!selectedOption) {
+                alert('Bitte wählen Sie eine Option aus.');
+                return;
+            }
+            
+            resultContainer.classList.remove('hidden');
+            
+            if (selectedOption.value === 'C') {
+                // Correct answer
+                correctAnswer.classList.remove('hidden');
+                wrongAnswer.classList.add('hidden');
+                successContent.classList.remove('hidden');
+                checkAnswerButton.disabled = true;
+                
+                // Add next button to footer
+                nextButtonContainer.innerHTML = '<a href="puzzle4.html" class="button">Weiter</a>';
+            } else {
+                // Wrong answer
+                correctAnswer.classList.add('hidden');
+                wrongAnswer.classList.remove('hidden');
+                successContent.classList.add('hidden');
+            }
+        });
+    </script>
+</body>
+</html>

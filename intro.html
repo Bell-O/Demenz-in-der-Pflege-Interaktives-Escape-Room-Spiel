@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Einführung - Demenz in der Pflege: Escape-Room-Spiel</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles-additional.css">
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="card-header">
+                <h1 class="card-title">Einführung: Die Situation</h1>
+            </div>
+            <div class="card-content">
+                <div class="image-container">
+                    <img src="/img/p0.webp" alt="Pflegeheim-Flur" class="full-width-image">
+                </div>
+                
+                <div class="prose">
+                    <p class="text-lg">
+                        <strong>Datum:</strong> 15. März 2025 | <strong>Uhrzeit:</strong> 18:30 Uhr
+                    </p>
+                    
+                    <p>
+                        Sie sind Teil des Abenddienstes auf der Demenzstation des Seniorenheims "Sonnenhof". 
+                        Bei der Übergabe wurde Ihnen mitgeteilt, dass Herr Mayer heute unruhig wirkte. 
+                        Er ist erst seit zwei Wochen auf der Station und hat sich noch nicht vollständig eingelebt.
+                    </p>
+                    
+                    <p>
+                        Als Sie mit dem Abendessen beginnen wollen, bemerken Sie, dass Herr Mayer nicht in seinem Zimmer ist. 
+                        Eine schnelle Suche auf der Station bleibt erfolglos. Die Stationstür steht offen - 
+                        möglicherweise hat jemand vergessen, sie zu schließen.
+                    </p>
+                    
+                    <div class="alert alert-amber">
+                        <h3>Ihre Aufgabe</h3>
+                        <p>
+                            Finden Sie heraus, wo Herr Mayer hingegangen ist, bringen Sie ihn sicher zurück und 
+                            stellen Sie seine Versorgung sicher. Dazu müssen Sie vier Rätsel lösen, die verschiedene 
+                            Aspekte der Demenzpflege abdecken.
+                        </p>
+                    </div>
+                    
+                    <h3>Über Herrn Mayer</h3>
+                    <ul>
+                        <li>80 Jahre alt, verwitwet seit 5 Jahren</li>
+                        <li>Diagnose: Demenz vom Alzheimer-Typ, mittelschweres Stadium</li>
+                        <li>Spricht oft von seinem verstorbenen Kater "Findus"</li>
+                        <li>War früher Lehrer für Mathematik</li>
+                        <li>Lebt erst seit kurzem im Pflegeheim</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="card-footer">
+                <a href="puzzle1.html" class="button">Zum ersten Rätsel</a>
+            </div>
+        </div>
+        
+        <div class="navigation">
+            <a href="index.html" class="button button-outline">Zurück zur Startseite</a>
+        </div>
+        
+        <div class="footer">
+            <p>© <span id="current-year"></span> Demenz in der Pflege: Escape-Room-Spiel | Entwickelt für Bildungszwecke</p>
+            <p>Konzept erstellt von <a href="https://bell-o.github.io/website/" target="_blank" rel="noopener noreferrer">Bell-O</a></p>
+        </div>
+    </div>
+    
+    <div class="credit-badge">
+        <a href="https://bell-o.github.io/website/" target="_blank" rel="noopener noreferrer">
+            <span>Konzept von</span>
+            <span class="bold">Bell-O</span>
+        </a>
+    </div>
+
+    <script>
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>

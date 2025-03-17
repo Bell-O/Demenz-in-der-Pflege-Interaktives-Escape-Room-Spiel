@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rätsel 1 - Demenz in der Pflege: Escape-Room-Spiel</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles-additional.css">
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="card-header">
+                <h1 class="card-title">Rätsel 1: Das leere Zimmer</h1>
+            </div>
+            <div class="card-content">
+                <div class="tabs">
+                    <div class="tabs-list">
+                        <button class="tab-trigger active" data-tab="situation">Situation</button>
+                        <button class="tab-trigger" data-tab="clues">Hinweise</button>
+                        <button class="tab-trigger" data-tab="puzzle">Rätsel</button>
+                        <button class="tab-trigger" data-tab="mmst">MMST-Info</button>
+                    </div>
+                    
+                    <div class="tab-content active" id="situation">
+                        <div class="image-container">
+                            <img src="img/p1.webp" alt="Leeres Zimmer von Herrn Mayer" class="full-width-image">
+                        </div>
+                        
+                        <div class="prose">
+                            <p>
+                                Sie betreten das Zimmer von Herrn Mayer und finden es unerwartet leer vor. 
+                                Das Bett ist unbenutzt, die Zimmertür stand offen. Sofort entsteht eine spannende, 
+                                leicht alarmierende Atmosphäre: Ist Herr Mayer weggelaufen?
+                            </p>
+                            <p>
+                                Im Raum entdecken Sie verschiedene Hinweise darauf, was passiert sein könnte. 
+                                Untersuchen Sie das Zimmer genau, um herauszufinden, wohin Herr Mayer gegangen sein könnte.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="tab-content" id="clues">
+                        <div class="clue-grid">
+                            <div class="clue-card">
+                                <div class="clue-card-header">
+                                    <h3 class="clue-card-title">MMST-Bogen</h3>
+                                </div>
+                                <div class="clue-card-content">
+                                    <p>
+                                        Auf dem Nachttisch liegt ein <strong>MMST-Bogen</strong> (Mini-Mental-Status-Test) 
+                                        mit einigen handschriftlichen Notizen. Bei den Fragen zur <strong>zeitlichen Orientierung</strong> 
+                                        sind viele Antworten falsch oder leer.
+                                    </p>
+                                    <p>
+                                        <strong>Punktzahl:</strong> 15/30 - mittelschwere Demenz
+                                    </p>
+                                </div>
+                            </div>
+                            
+                            <div class="clue-card">
+                                <div class="clue-card-header">
+                                    <h3 class="clue-card-title">Notizblock</h3>
+                                </div>
+                                <div class="clue-card-content">
+                                    <p>
+                                        Daneben liegt ein Notizblock, auf dem in ungelenker Schrift Worte stehen: 
+                                        <em class="quote">"Milch – Brot – Katzenfutter"</em>
+                                    </p>
+                                    <p>
+                                        Das Wort "Katzenfutter" fällt besonders auf, da Herr Mayer eigentlich keinen echten 
+                                        Kater bei sich haben darf – sein Kater Findus existiert nur in seiner Erinnerung.
+                                    </p>
+                                </div>
+                            </div>
+                            
+                            <div class="clue-card">
+                                <div class="clue-card-header">
+                                    <h3 class="clue-card-title">Gegenstände auf dem Tisch</h3>
+                                </div>
+                                <div class="clue-card-content">
+                                    <p>
+                                        Im Zimmer finden Sie drei Gegenstände, die scheinbar bewusst herausgelegt wurden: 
+                                        einen <strong>Apfel</strong>, einen <strong>Schlüsselbund</strong> und einen <strong>Ball</strong>.
+                                    </p>
+                                    <p>
+                                        Diese drei Dinge liegen nebeneinander auf dem Tisch. Auf den ersten Blick wirken sie zusammenhanglos.
+                                    </p>
+                                </div>
+                            </div>
+                            
+                            <div class="clue-card">
+                                <div class="clue-card-header">
+                                    <h3 class="clue-card-title">Kleiderschrank</h3>
+                                </div>
+                                <div class="clue-card-content">
+                                    <p>
+                                        Die Kleiderschranktür steht offen. Herr Mayers Jacke und Schuhe fehlen – 
+                                        er hat sich offenbar angezogen und das Zimmer verlassen.
+                                    </p>
+                                    <p>
+                                        An der Innenseite der Tür hängt ein großes Foto seines Katers Findus und 
+                                        ein altes Bild seines früheren Hauses.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="tab-content" id="puzzle">
+                        <div class="prose">
+                            <p>
+                                Im Zimmer gibt es einen <strong>abschließbaren Schreibtisch</strong> mit einer 
+                                kleinen Zahlenkombinationsschublade. Darauf klebt ein Zettel: 
+                                <em class="quote">"Nicht vergessen: 7, 7, 7..."</em>
+                            </p>
+                            
+                            <p>
+                                Die Spieler merken, dass dies ein versteckter Hinweis sein könnte. 
+                                Es bezieht sich auf den MMST-Teil "Aufmerksamkeit und Rechnen", 
+                                wo man immer wieder 7 abzieht (100, 93, 86, ...).
+                            </p>
+                        </div>
+                        
+                        <div id="puzzle-form" class="puzzle-form">
+                            <div class="form-group">
+                                <label for="code">Geben Sie den vierstelligen Code ein:</label>
+                                <input type="text" id="code" maxlength="4" placeholder="_ _ _ _" class="code-input">
+                            </div>
+                            
+                            <div id="error-message" class="alert alert-error hidden">
+                                <h4>Falsch</h4>
+                                <p>Das ist nicht der richtige Code. Versuchen Sie es erneut.</p>
+                            </div>
+                            
+                            <div class="button-group">
+                                <button type="button" id="hint-button" class="button button-outline">Hinweis anzeigen</button>
+                                <button type="button" id="submit-code" class="button">Code eingeben</button>
+                            </div>
+                            
+                            <div id="hint-box" class="alert alert-amber hidden">
+                                <h4>Hinweis</h4>
+                                <p>Denken Sie an die 7er-Abzugsaufgabe aus dem MMST: 100 - 7 = 93, weiter -7 = 86, dann...</p>
+                            </div>
+                        </div>
+                        
+                        <div id="puzzle-solved" class="hidden">
+                            <div class="alert alert-success">
+                                <h4>Richtig!</h4>
+                                <p>Sie haben den Code geknackt: 7265</p>
+                            </div>
+                            
+                            <div class="prose">
+                                <p>
+                                    In der Schreibtischschublade finden Sie Herr Mayers <strong>Adressbuch</strong> mit dem 
+                                    Namen des nahegelegenen Supermarkts, wo er früher immer einkaufte, samt Öffnungszeiten.
+                                </p>
+                                <p>
+                                    Jetzt wissen Sie genug: Herr Mayer ist vermutlich losgegangen, um <strong>"Katzenfutter"</strong> zu 
+                                    kaufen, da er in seiner Verwirrung seine alte Routine durchführt.
+                                </p>
+                                <p>
+                                    Aufgrund der <strong>demenzbedingten Orientierungsstörung</strong> glaubt Herr Mayer wohl, 
+                                    er müsse für Findus sorgen. Als nächstes müssen Sie ihm nachgehen.
+                                </p>
+                            </div>
+                            
+                            <div class="center">
+                                <a href="puzzle2.html" class="button">Zum nächsten Rätsel</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="tab-content" id="mmst">
+                        <div class="prose">
+                            <h3>Mini-Mental-Status-Test (MMST)</h3>
+                            <p>
+                                Der MMST ist ein Screening-Instrument zur Erfassung kognitiver Störungen bei älteren Menschen. 
+                                Er wird häufig zur Erstbeurteilung einer möglichen Demenz eingesetzt.
+                            </p>
+                            
+                            <h4>Der Test umfasst folgende Bereiche:</h4>
+                            <ul>
+                                <li><strong>Zeitliche und örtliche Orientierung</strong> (10 Punkte)</li>
+                                <li><strong>Merkfähigkeit</strong> - Erinnern von drei Wörtern (3 Punkte)</li>
+                                <li><strong>Aufmerksamkeit und Rechnen</strong> - z.B. von 100 in 7er-Schritten subtrahieren (5 Punkte)</li>
+                                <li><strong>Erinnerungsfähigkeit</strong> - Abrufen der drei gemerkten Wörter (3 Punkte)</li>
+                                <li><strong>Sprache</strong> - Benennen, Nachsprechen, Verstehen, Lesen, Schreiben (8 Punkte)</li>
+                                <li><strong>Konstruktive Praxis</strong> - Zeichnen (1 Punkt)</li>
+                            </ul>
+                            
+                            <h4>Bewertung:</h4>
+                            <ul>
+                                <li><strong>27-30 Punkte:</strong> Keine kognitive Beeinträchtigung</li>
+                                <li><strong>20-26 Punkte:</strong> Leichte kognitive Beeinträchtigung</li>
+                                <li><strong>10-19 Punkte:</strong> Mittelschwere kognitive Beeinträchtigung</li>
+                                <li><strong>0-9 Punkte:</strong> Schwere kognitive Beeinträchtigung</li>
+                            </ul>
+                            
+                            <div class="info-box">
+                                <p>
+                                    <strong>Hinweis:</strong> Herr Mayer erreichte 15/30 Punkten, was auf eine mittelschwere Demenz hindeutet.
+                                    Besonders bei der zeitlichen Orientierung und Merkfähigkeit zeigt er deutliche Defizite.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card-footer">
+                <div class="navigation-buttons">
+                    <a href="intro.html" class="button button-outline">Zurück</a>
+                    <div id="next-button-container"></div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer">
+            <p>© <span id="current-year"></span> Demenz in der Pflege: Escape-Room-Spiel | Entwickelt für Bildungszwecke</p>
+            <p>Konzept erstellt von <a href="https://bell-o.github.io/website/" target="_blank" rel="noopener noreferrer">Bell-O</a></p>
+        </div>
+    </div>
+    
+    <div class="credit-badge">
+        <a href="https://bell-o.github.io/website/" target="_blank" rel="noopener noreferrer">
+            <span>Konzept von</span>
+            <span class="bold">Bell-O</span>
+        </a>
+    </div>
+
+    <script>
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+        
+        // Tab functionality
+        const tabTriggers = document.querySelectorAll('.tab-trigger');
+        const tabContents = document.querySelectorAll('.tab-content');
+        
+        tabTriggers.forEach(trigger => {
+            trigger.addEventListener('click', () => {
+                // Remove active class from all triggers and contents
+                tabTriggers.forEach(t => t.classList.remove('active'));
+                tabContents.forEach(c => c.classList.remove('active'));
+                
+                // Add active class to clicked trigger
+                trigger.classList.add('active');
+                
+                // Show corresponding content
+                const tabId = trigger.getAttribute('data-tab');
+                document.getElementById(tabId).classList.add('active');
+            });
+        });
+        
+        // Hint button functionality
+        const hintButton = document.getElementById('hint-button');
+        const hintBox = document.getElementById('hint-box');
+        
+        hintButton.addEventListener('click', () => {
+            hintBox.classList.toggle('hidden');
+            hintButton.textContent = hintBox.classList.contains('hidden') ? 'Hinweis anzeigen' : 'Hinweis ausblenden';
+        });
+        
+        // Code submission functionality
+        const submitButton = document.getElementById('submit-code');
+        const codeInput = document.getElementById('code');
+        const errorMessage = document.getElementById('error-message');
+        const puzzleForm = document.getElementById('puzzle-form');
+        const puzzleSolved = document.getElementById('puzzle-solved');
+        const nextButtonContainer = document.getElementById('next-button-container');
+        
+        submitButton.addEventListener('click', () => {
+            const code = codeInput.value;
+            
+            if (code === '7265') {
+                // Correct code
+                puzzleForm.classList.add('hidden');
+                puzzleSolved.classList.remove('hidden');
+                
+                // Add next button to footer
+                nextButtonContainer.innerHTML = '<a href="puzzle2.html" class="button">Weiter</a>';
+            } else {
+                // Incorrect code
+                errorMessage.classList.remove('hidden');
+                codeInput.value = '';
+                setTimeout(() => {
+                    errorMessage.classList.add('hidden');
+                }, 3000);
+            }
+        });
+        
+        // Allow Enter key to submit code
+        codeInput.addEventListener('keypress', (e) => {
+            if (e.key === 'Enter') {
+                submitButton.click();
+            }
+        });
+    </script>
+</body>
+</html>
